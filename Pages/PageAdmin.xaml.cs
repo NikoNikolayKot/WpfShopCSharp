@@ -13,20 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using WpfShopCSharp.Pages;
-using WpfShopCSharp.db;
-
-namespace WpfShopCSharp
+namespace WpfShopCSharp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageAdmin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageAdmin : Page
     {
-        public MainWindow()
+        public PageAdmin()
         {
             InitializeComponent();
-            FrameMain.NavigationService.Navigate(new PageAutentification());
+        }
+
+        private void btnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }
