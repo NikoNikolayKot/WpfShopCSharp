@@ -14,6 +14,9 @@
             <TextBlock Text="Меню администратора"
                        HorizontalAlignment="Center"
                        Padding="20"/>
+            <Button Name="btnGoSeeProducts"
+                    Click="btnGoSeeProducts_Click"
+                    Content="Просмотреть товары"/>
             <Button Name="btnGoBack"
                     Click="btnGoBack_Click"
                     Content="Вернуться"/>

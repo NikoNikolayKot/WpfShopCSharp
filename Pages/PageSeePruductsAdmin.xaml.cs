@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfShopCSharp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageAdmin.xaml
+    /// Логика взаимодействия для PageSeePruductsAdmin.xaml
     /// </summary>
-    public partial class PageAdmin : Page
+    public partial class PageSeePruductsAdmin : Page
     {
-        public PageAdmin()
+        public PageSeePruductsAdmin()
         {
             InitializeComponent();
         }
@@ -29,10 +29,5 @@ namespace WpfShopCSharp.Pages
         {
             NavigationService.GoBack();
         }
-
-        private void btnGoSeeProducts_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PageSeePruductsAdmin());
-;        }
     }
 }

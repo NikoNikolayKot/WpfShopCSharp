@@ -136,6 +136,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageSeePruductsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +154,9 @@
     </Compile>
     <Compile Include="Pages\PageManager.xaml.cs">
       <DependentUpon>PageManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSeePruductsAdmin.xaml.cs">
+      <DependentUpon>PageSeePruductsAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageUser.xaml.cs">
       <DependentUpon>PageUser.xaml</DependentUpon>
