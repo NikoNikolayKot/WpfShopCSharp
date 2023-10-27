@@ -45,7 +45,7 @@ namespace WpfShopCSharp.Pages
                             MessageBox.Show("Вы входите как Пользователь", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                             NavigationService.Navigate(new PageUser());
                             break;
-                        case 3:
+                        case 1002:
                             MessageBox.Show("Вы входите как Администратор", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
                             NavigationService.Navigate(new PageAdmin());
                             break;
