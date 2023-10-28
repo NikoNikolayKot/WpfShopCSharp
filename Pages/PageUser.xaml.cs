@@ -29,5 +29,10 @@ namespace WpfShopCSharp.Pages
         {
             NavigationService.GoBack();
         }
+
+        private void btnSeeProduct_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageSeeProductsUser());
+        }
     }
 }

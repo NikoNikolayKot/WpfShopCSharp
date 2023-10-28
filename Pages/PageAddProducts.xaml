@@ -1,0 +1,102 @@
+﻿<Page x:Class="WpfShopCSharp.Pages.PageAddProducts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfShopCSharp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAddProducts">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Артикул: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbArt"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Категория: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TexctBox Width="512"
+                         Name="tbCat"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Еденица: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbUni"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Производитель: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbMan"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Название: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbNam"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Описание: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbText"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Цена: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbCos"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Скидка: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbDis"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Максимальная скидка: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbDisMax"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Количество в упаковке: "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbQua"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Изображение (имя файла): "
+                           TextAlignment="Right"
+                           Width="256"/>
+                <TextBox Width="512"
+                         Name="tbImg"/>
+            </StackPanel>
+            <Button Name="tbAdd"
+                    Click="tbAdd_Click"
+                    Content="Добавить продукт"
+                    Width="734"
+                    Margin="0 0 0 10"/>
+            <Button Name="tbGoBack"
+                    Click="tbGoBack_Click"
+                    Content="Вернуться"
+                    Width="734"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -17,6 +17,9 @@
             <Button Name="btnGoSeeProducts"
                     Click="btnGoSeeProducts_Click"
                     Content="Просмотреть товары"/>
+            <Button Name="btnAddProduct"
+                    Click="btnAddProduct_Click"
+                    Content="Добавить товары"/>
             <Button Name="btnGoBack"
                     Click="btnGoBack_Click"
                     Content="Вернуться"/>

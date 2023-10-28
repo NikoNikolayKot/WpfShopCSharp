@@ -8,14 +8,14 @@
         <EntityTypeShape EntityType="user8Model.Order" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.OrderPickupPoint" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.OrderStatus" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
-        <EntityTypeShape EntityType="user8Model.Product" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="user8Model.ProductCategory" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="user8Model.Product" Width="2.625" PointX="2.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="user8Model.ProductCategory" Width="1.5" PointX="0.5" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.ProductManufacturer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.ProductUnit" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.Role" Width="1.5" PointX="1.5" PointY="17.875" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.25" IsExpanded="true" />
         <EntityTypeShape EntityType="user8Model.User" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="user8Model.OrderProduct" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="user8Model.OrderProduct" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
         <AssociationConnector Association="user8Model.FK_Order_OrderPickupPoint" ManuallyRouted="false" />
         <AssociationConnector Association="user8Model.FK_Order_OrderStatus" ManuallyRouted="false" />
         <AssociationConnector Association="user8Model.FK_Order_User" ManuallyRouted="false" />

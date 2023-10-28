@@ -124,6 +124,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageAddProducts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PageManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageSeeProductsUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,6 +154,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\PageAddProducts.xaml.cs">
+      <DependentUpon>PageAddProducts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageAdmin.xaml.cs">
       <DependentUpon>PageAdmin.xaml</DependentUpon>
     </Compile>
@@ -154,6 +165,9 @@
     </Compile>
     <Compile Include="Pages\PageManager.xaml.cs">
       <DependentUpon>PageManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSeeProductsUser.xaml.cs">
+      <DependentUpon>PageSeeProductsUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageSeePruductsAdmin.xaml.cs">
       <DependentUpon>PageSeePruductsAdmin.xaml</DependentUpon>

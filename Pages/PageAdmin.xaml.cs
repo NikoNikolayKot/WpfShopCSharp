@@ -33,6 +33,11 @@ namespace WpfShopCSharp.Pages
         private void btnGoSeeProducts_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PageSeePruductsAdmin());
-;        }
+;       }
+
+        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageAddProducts());
+        }
     }
 }

@@ -17,47 +17,20 @@ using WpfShopCSharp.db;
 namespace WpfShopCSharp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageSeePruductsAdmin.xaml
+    /// Логика взаимодействия для PageSeeProductsUser.xaml
     /// </summary>
-    public partial class PageSeePruductsAdmin : Page
+    public partial class PageSeeProductsUser : Page
     {
         user8 user8 = new user8();
 
-        public PageSeePruductsAdmin()
+        public PageSeeProductsUser()
         {
             InitializeComponent();
-            cbSort.SelectedIndex = 1;
-            cbFilt.SelectedIndex = 1;
-            ListProducts.ItemsSource = user8.Product.ToList();
         }
 
         private void btnGoBack_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
-        }
-
-        private void btnDelete_Click(object sender, RoutedEventArgs e)
-        {
-            if(MessageBox.Show("Вы действительно хотите удалить эту строчку(-ки)? \nВосстановить данные будет невозможно!", "Предупреждение", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-            {
-                try
-                {
-                    if (ListProducts.SelectedItems.Count > 0)
-                    {
-                        for (int i = 0; i < ListProducts.SelectedItems.Count; i++)
-                        {
-                            Product product = ListProducts.SelectedItems[i] as Product;
-                            user8.Product.Remove(product);
-                        }
-                        user8.SaveChanges();
-                        MessageBox.Show("Удалено", "Оповещение", MessageBoxButton.OK, MessageBoxImage.Information);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MyExceptionHelper(ex);
-                }
-            }
         }
 
         private void cbFilt_SelectionChanged(object sender, SelectionChangedEventArgs e)
