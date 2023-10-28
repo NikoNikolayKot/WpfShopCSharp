@@ -22,7 +22,7 @@
                 <TextBlock Text="Категория: "
                            TextAlignment="Right"
                            Width="256"/>
-                <TexctBox Width="512"
+                <TextBox Width="512"
                          Name="tbCat"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
