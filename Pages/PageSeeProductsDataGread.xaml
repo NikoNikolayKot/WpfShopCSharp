@@ -15,7 +15,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ProductID}"
                                         Header="№п/п"
-                                        Width="*"/>
+                                        Width="0.6*"/>
                 <DataGridTextColumn Binding="{Binding ProductArticleNumber}"
                                         Header="Артикул"
                                         Width="*"/>
@@ -27,7 +27,7 @@
                                         Width="*"/>
                 <DataGridTextColumn Binding="{Binding ProductManufacturer.ManufacturerName}"
                                         Header="Производитель"
-                                        Width="*"/>
+                                        Width="2*"/>
                 <DataGridTextColumn Binding="{Binding ProductName}"
                                         Header="Название"
                                         Width="*"/>
@@ -51,6 +51,7 @@
         <Button x:Name="btGoBack"
                     Click="btGoBack_Click"
                     Content="Вернуться"
-                    VerticalAlignment="Bottom"/>
+                    VerticalAlignment="Bottom"
+                Margin="0 0 0 25"/>
     </Grid>
 </Page>
