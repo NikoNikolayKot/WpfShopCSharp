@@ -140,6 +140,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageSeeProductsDataGread.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageSeeProductsUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,6 +169,9 @@
     </Compile>
     <Compile Include="Pages\PageManager.xaml.cs">
       <DependentUpon>PageManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSeeProductsDataGread.xaml.cs">
+      <DependentUpon>PageSeeProductsDataGread.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageSeeProductsUser.xaml.cs">
       <DependentUpon>PageSeeProductsUser.xaml</DependentUpon>

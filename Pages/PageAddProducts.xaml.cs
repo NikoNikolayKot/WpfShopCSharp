@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 using WpfShopCSharp.db;
 
 namespace WpfShopCSharp.Pages
@@ -26,6 +27,17 @@ namespace WpfShopCSharp.Pages
         public PageAddProducts()
         {
             InitializeComponent();
+            tbCat.SelectedValuePath = "CategoryID";
+            tbCat.DisplayMemberPath = "CategoryName";
+            tbCat.ItemsSource = user8.ProductCategory.ToList();
+
+            tbUni.SelectedValuePath = "ProductUnitID";
+            tbUni.DisplayMemberPath = "UnitName";
+            tbUni.ItemsSource = user8.ProductUnit.ToList();
+
+            tbMan.SelectedValuePath = "ManufacturerID";
+            tbMan.DisplayMemberPath = "ManufacturerName";
+            tbMan.ItemsSource = user8.ProductManufacturer.ToList();
         }
 
         private void tbGoBack_Click(object sender, RoutedEventArgs e)
@@ -42,16 +54,17 @@ namespace WpfShopCSharp.Pages
                     Product product = new Product();
                     {
                         product.ProductArticleNumber = tbArt.Text;
-                        product.ProductCategory = tbCat.Text;
-                        product.ProductUnit = tbUni.Text;
-                        product.ProductManufacturer = tbMan.Text;
+                        product.CategoryID = Convert.ToInt32(tbCat.SelectedItem as Product);
+                        product.ProductUnitID = Convert.ToInt32(tbUni.SelectedItem as Product);
+                        product.ManufacturerID = Convert.ToInt32(tbMan.SelectedItem as Product);
                         product.ProductName = tbNam.Text;
                         product.ProductDescription = tbText.Text;
                         product.ProductCost = Decimal.Parse(tbCos.Text);
                         product.ProductDiscountAmount = Byte.Parse(tbDis.Text);
                         product.ProductDiscountAmountMax = Byte.Parse(tbDisMax.Text);
                         product.ProductQuantityInStock = int.Parse(tbQua.Text);
-                        product.ProductPhoto = tbImg.Text;
+                        product.ProductPhoto = null;
+                        product.ProductImageBitmap = null;
                     }
 
                     user8.Product.Add(product);

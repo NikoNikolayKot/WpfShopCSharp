@@ -22,21 +22,21 @@
                 <TextBlock Text="Категория: "
                            TextAlignment="Right"
                            Width="256"/>
-                <TextBox Width="512"
+                <ComboBox Width="512"
                          Name="tbCat"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Еденица: "
                            TextAlignment="Right"
                            Width="256"/>
-                <TextBox Width="512"
+                <ComboBox Width="512"
                          Name="tbUni"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Производитель: "
                            TextAlignment="Right"
                            Width="256"/>
-                <TextBox Width="512"
+                <ComboBox Width="512"
                          Name="tbMan"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -80,13 +80,6 @@
                            Width="256"/>
                 <TextBox Width="512"
                          Name="tbQua"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Изображение (имя файла): "
-                           TextAlignment="Right"
-                           Width="256"/>
-                <TextBox Width="512"
-                         Name="tbImg"/>
             </StackPanel>
             <Button Name="tbAdd"
                     Click="tbAdd_Click"

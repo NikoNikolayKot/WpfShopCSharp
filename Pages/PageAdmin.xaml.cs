@@ -39,5 +39,10 @@ namespace WpfShopCSharp.Pages
         {
             NavigationService.Navigate(new PageAddProducts());
         }
+
+        private void btnGoSeeProductsDataGread_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageSeeProductsDataGread());
+        }
     }
 }

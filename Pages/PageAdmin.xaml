@@ -17,6 +17,9 @@
             <Button Name="btnGoSeeProducts"
                     Click="btnGoSeeProducts_Click"
                     Content="Просмотреть товары"/>
+            <Button Name="btnGoSeeProductsDataGread"
+                    Click="btnGoSeeProductsDataGread_Click"
+                    Content="Просмотреть товары DataGread"/>
             <Button Name="btnAddProduct"
                     Click="btnAddProduct_Click"
                     Content="Добавить товары"/>
