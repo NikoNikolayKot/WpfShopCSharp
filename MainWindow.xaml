@@ -4,9 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfShopCSharp"
+        Icon="C:\Users\Николай\source\repos\WpfShopCSharp\Res\iconShop.png"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    Background="Teal">
+            <Image Source="C:\Users\Николай\source\repos\WpfShopCSharp\Res\iconShop.png"
+                   Height="105"
+                   HorizontalAlignment="Left"
+                   Margin="15"/>
+        </StackPanel>
+        <Frame Grid.Row="1"
+               Height="450"
+               NavigationUIVisibility="Hidden"
+               Name="FrameMain">
+            
+        </Frame>
     </Grid>
 </Window>

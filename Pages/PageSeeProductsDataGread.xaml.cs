@@ -13,20 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using WpfShopCSharp.Pages;
 using WpfShopCSharp.db;
 
-namespace WpfShopCSharp
+namespace WpfShopCSharp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageSeeProductsDataGread.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageSeeProductsDataGread : Page
     {
-        public MainWindow()
+        public PageSeeProductsDataGread()
         {
             InitializeComponent();
-            FrameMain.NavigationService.Navigate(new PageAutentification());
+            user8 user8 = new user8();
+            dgProducts.ItemsSource = user8.Product.ToList();
+        }
+
+        private void btGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }
