@@ -15,15 +15,15 @@
                         Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Введите ваш логин"
-                               Width="160"/>
+                               Width="150"/>
                         <TextBox Name="tbLogin"
-                             Width="160"/>
+                             Width="150"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Введите ваш пароль"
-                               Width="160"/>
+                               Width="150"/>
                         <TextBox Name="tbPassword"
-                             Width="160"/>
+                             Width="150"/>
                 </StackPanel>
                 <Button Content="Войти"
                         Name="btnStart"

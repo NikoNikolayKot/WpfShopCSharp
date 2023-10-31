@@ -51,21 +51,21 @@ namespace WpfShopCSharp.Pages
             {
                 try
                 {
-                    Product product = new Product();
+                    Product product = new Product()
                     {
-                        product.ProductArticleNumber = tbArt.Text;
-                        product.CategoryID = Convert.ToInt32(tbCat.SelectedItem as Product);
-                        product.ProductUnitID = Convert.ToInt32(tbUni.SelectedItem as Product);
-                        product.ManufacturerID = Convert.ToInt32(tbMan.SelectedItem as Product);
-                        product.ProductName = tbNam.Text;
-                        product.ProductDescription = tbText.Text;
-                        product.ProductCost = Decimal.Parse(tbCos.Text);
-                        product.ProductDiscountAmount = Byte.Parse(tbDis.Text);
-                        product.ProductDiscountAmountMax = Byte.Parse(tbDisMax.Text);
-                        product.ProductQuantityInStock = int.Parse(tbQua.Text);
-                        product.ProductPhoto = null;
-                        product.ProductImageBitmap = null;
-                    }
+                        ProductArticleNumber = tbArt.Text,
+                        ProductCategory = tbCat.SelectedItem as ProductCategory,
+                        ProductUnit = tbUni.SelectedItem as ProductUnit,
+                        ProductManufacturer = tbMan.SelectedItem as ProductManufacturer,
+                        ProductName = tbNam.Text,
+                        ProductDescription = tbText.Text,
+                        ProductCost = Decimal.Parse(tbCos.Text),
+                        ProductDiscountAmount = Byte.Parse(tbDis.Text),
+                        ProductDiscountAmountMax = Byte.Parse(tbDisMax.Text),
+                        ProductQuantityInStock = int.Parse(tbQua.Text),
+                        ProductPhoto = null,
+                        ProductImageBitmap = null,
+                    };
 
                     user8.Product.Add(product);
                     user8.SaveChanges();
