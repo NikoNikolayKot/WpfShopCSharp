@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfShopCSharp"
-        Icon="C:\Users\Николай\source\repos\WpfShopCSharp\Res\iconShop.png"
+        Icon="C:\Users\user_ten\Source\Repos\WpfShopCSharp\Res\iconShop.png"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid>
@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0"
                     Background="Teal">
-            <Image Source="C:\Users\Николай\source\repos\WpfShopCSharp\Res\iconShop.png"
+            <Image Source="C:\Users\user_ten\Source\Repos\WpfShopCSharp\Res\iconShop.png"
                    Height="105"
                    HorizontalAlignment="Left"
                    Margin="15"/>

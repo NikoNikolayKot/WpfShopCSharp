@@ -11,6 +11,7 @@
 
     <Grid>
         <Button x:Name="btnGoBack"
+                Style="{StaticResource bGoBack}"
                 Click="btnGoBack_Click"
                 Content="Вернуться"
                 VerticalAlignment="Bottom"

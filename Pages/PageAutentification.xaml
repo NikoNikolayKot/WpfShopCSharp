@@ -13,19 +13,22 @@
         <StackPanel VerticalAlignment="Center">
             <StackPanel HorizontalAlignment="Center"
                         Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Введите ваш логин"
-                               Width="150"/>
-                        <TextBox Name="tbLogin"
-                             Width="150"/>
+                <StackPanel Orientation="Horizontal"
+                        Style="{StaticResource spNote}">
+                    <TextBlock Text="Введите ваш логин"
+                               Width="120"/>
+                    <TextBox Name="tbLogin"
+                             Width="135"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Введите ваш пароль"
-                               Width="150"/>
-                        <TextBox Name="tbPassword"
-                             Width="150"/>
+                <StackPanel Orientation="Horizontal"
+                        Style="{StaticResource spNote}">
+                    <TextBlock Text="Введите ваш пароль"
+                               Width="120"/>
+                    <TextBox Name="tbPassword"
+                             Width="135"/>
                 </StackPanel>
                 <Button Content="Войти"
+                    Style="{StaticResource bGoBack}"
                         Name="btnStart"
                         Click="btnStart_Click"/>
             </StackPanel>

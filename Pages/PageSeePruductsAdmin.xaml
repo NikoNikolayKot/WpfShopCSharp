@@ -38,14 +38,14 @@
         </StackPanel>
         <ListView Name="ListProducts"
                   Background="AliceBlue"
-                  Margin="0 25 0 75">
+                  Margin="0 25 0 74">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="150"/>
                             <ColumnDefinition Width="25"/>
-                            <ColumnDefinition Width="450"/>
+                            <ColumnDefinition Width="400"/>
                             <ColumnDefinition Width="25"/>
                             <ColumnDefinition Width="150"/>
                         </Grid.ColumnDefinitions>
@@ -54,7 +54,7 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Image Source="C:\Users\Николай\source\repos\WpfShopCSharp\Res\noData.png"
+                        <Image Source="C:\Users\user_ten\Source\Repos\WpfShopCSharp\Res\noData.png"
                                Grid.Column="0"
                                Grid.RowSpan="3"
                                Width="150"/>
@@ -89,13 +89,30 @@
         <StackPanel Orientation="Vertical"
                     VerticalAlignment="Bottom"
                     Margin="0 0 0 25">
-            <Button x:Name="btnDelete"
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnDelete"
+                    Style="{StaticResource bNope}"
                     Click="btnDelete_Click"
                     Content="Удалить"
-                    Margin="0 0 0 7"/>
-            <Button x:Name="btnGoBack"
+                        Width="400"/>
+                <Button Name="btnAddProduct"
+                    Style="{StaticResource bOkey}"
+                    Click="btnAddProduct_Click"
+                    Content="Добавить товары"
+                        Width="400"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnEditProduct"
+                    Style="{StaticResource bGoBack}"
+                    Click="btnEditProduct_Click"
+                    Content="Редактировать товары"
+                        Width="400"/>
+                <Button x:Name="btnGoBack"
+                    Style="{StaticResource bGoBack}"
                     Click="btnGoBack_Click"
-                    Content="Вернуться"/>
+                    Content="Вернуться"
+                        Width="400"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

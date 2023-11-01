@@ -10,17 +10,18 @@
       Background="PaleTurquoise">
 
     <Grid>
-        <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    Margin="0 0 0 75">
             <TextBlock Text="Меню менеджера"
                        HorizontalAlignment="Center"
                        Padding="20"/>
             <Button Name="btnSeeProduct"
+                    Style="{StaticResource bGoBack}"
                     Click="btnSeeProduct_Click"
                     Content="Просмотреть товары"/>
-            <Button Name="btnAddProduct"
-                    Click="btnAddProduct_Click"
-                    Content="Добавить товары"/>
             <Button Name="btnGoBack"
+                    Style="{StaticResource bGoBack}"
                     Click="btnGoBack_Click"
                     Content="Вернуться"/>
         </StackPanel>

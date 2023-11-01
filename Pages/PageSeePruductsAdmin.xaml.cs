@@ -130,5 +130,15 @@ namespace WpfShopCSharp.Pages
         {
             MessageBox.Show("" + ex, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
+
+        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageAddProducts());
+        }
+
+        private void btnEditProduct_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageEditProducts());
+        }
     }
 }

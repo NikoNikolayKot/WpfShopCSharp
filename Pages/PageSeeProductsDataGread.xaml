@@ -49,6 +49,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btGoBack"
+                    Style="{StaticResource bGoBack}"
                     Click="btGoBack_Click"
                     Content="Вернуться"
                     VerticalAlignment="Bottom"

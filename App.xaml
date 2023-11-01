@@ -4,6 +4,48 @@
              xmlns:local="clr-namespace:WpfShopCSharp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button"
+                x:Key="bGoBack">
+            <Setter Property="Background"
+                    Value="SkyBlue"/>
+            <Setter Property="FontFamily"
+                    Value="Arial"/>
+            <Setter Property="Margin"
+                    Value="0 3 0 3"/>
+            <Setter Property="Width"
+                    Value="256"/>
+        </Style>
+        <Style TargetType="Button"
+                x:Key="bOkey">
+            <Setter Property="Background"
+                    Value="PaleGreen"/>
+            <Setter Property="FontFamily"
+                    Value="Arial"/>
+            <Setter Property="Margin"
+                    Value="0 3 0 3"/>
+            <Setter Property="Width"
+                    Value="256"/>
+        </Style>
+        <Style TargetType="Button"
+                x:Key="bNope">
+            <Setter Property="Background"
+                    Value="LightSalmon"/>
+            <Setter Property="FontFamily"
+                    Value="Arial"/>
+            <Setter Property="Margin"
+                    Value="0 3 0 3"/>
+            <Setter Property="Width"
+                    Value="256"/>
+        </Style>
+        <Style TargetType="TextBlock"
+               x:Key="tbOnly">
+            <Setter Property="HorizontalAlignment"
+                    Value="Left"/>
+        </Style>
+        <Style TargetType="StackPanel"
+               x:Key="spNote">
+            <Setter Property="Margin"
+                    Value="0 3 0 3"/>
+        </Style>
     </Application.Resources>
 </Application>
