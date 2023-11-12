@@ -27,13 +27,13 @@
                                         Width="*"/>
                 <DataGridTextColumn Binding="{Binding ProductManufacturer.ManufacturerName}"
                                         Header="Производитель"
-                                        Width="2*"/>
+                                        Width="*"/>
                 <DataGridTextColumn Binding="{Binding ProductName}"
                                         Header="Название"
-                                        Width="*"/>
+                                        Width="2*"/>
                 <DataGridTextColumn Binding="{Binding ProductDescription}"
                                         Header="Описание"
-                                        Width="*"/>
+                                        Width="2*"/>
                 <DataGridTextColumn Binding="{Binding ProductCost}"
                                         Header="Цена"
                                         Width="*"/>
@@ -46,13 +46,24 @@
                 <DataGridTextColumn Binding="{Binding ProductQuantityInStock}"
                                         Header="Количество"
                                         Width="*"/>
+                <DataGridTemplateColumn Width="2*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btEdit"
+                                    Style="{StaticResource bGoBack}"
+                                    Click="btEdit_Click"
+                                    Content="Редактировать"
+                                    Width="100"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btGoBack"
-                    Style="{StaticResource bGoBack}"
-                    Click="btGoBack_Click"
-                    Content="Вернуться"
-                    VerticalAlignment="Bottom"
+                Style="{StaticResource bGoBack}"
+                Click="btGoBack_Click"
+                Content="Вернуться"
+                VerticalAlignment="Bottom"
                 Margin="0 0 0 25"/>
     </Grid>
 </Page>
