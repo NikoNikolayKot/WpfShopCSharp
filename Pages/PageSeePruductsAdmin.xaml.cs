@@ -138,7 +138,9 @@ namespace WpfShopCSharp.Pages
 
         private void btnEditProduct_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new PageEditProducts());
+            Product product = new Product();
+            product = ListProducts.SelectedItem as Product;
+            NavigationService.Navigate(new PageEditProducts(product));
         }
     }
 }

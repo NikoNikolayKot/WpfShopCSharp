@@ -10,11 +10,110 @@
       Background="AliceBlue">
 
     <Grid>
-        <Button x:Name="btnGoBack"
-                Style="{StaticResource bGoBack}"
-                Click="btnGoBack_Click"
-                Content="Вернуться"
-                VerticalAlignment="Bottom"
-                Margin="0 0 0 25"/>
+        <StackPanel Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Артикул: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbArt"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Категория: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <ComboBox Width="180"
+                     Name="tbCat"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Еденица: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <ComboBox Width="180"
+                     Name="tbUni"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Производитель: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <ComboBox Width="180"
+                     Name="tbMan"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Название: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbNam"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Описание: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbText"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Цена: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbCos"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Скидка: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbDis"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Максимальная скидка: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbDisMax"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource spNote}">
+                <TextBlock Text="Количество в упаковке: "
+                       Style="{StaticResource tbOnly}"
+                       Width="150"/>
+                <TextBox Width="180"
+                     Name="tbQua"/>
+            </StackPanel>
+            <Button x:Name="btOk"
+                Click="btOk_Click_1"
+                Content="Редактировать"
+                Style="{StaticResource bOkey}"
+                Width="330"/>
+            <Button x:Name="btnGoBack"
+            Style="{StaticResource bGoBack}"
+            Click="btnGoBack_Click"
+            Content="Вернуться"
+            VerticalAlignment="Bottom"
+            Width="330"/>
+        </StackPanel>
     </Grid>
 </Page>

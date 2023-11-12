@@ -54,7 +54,7 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Image Source="C:\Users\user_ten\Source\Repos\WpfShopCSharp\Res\noData.png"
+                        <Image Source="c:\users\nkot8\source\repos\nikonikolaykot\wpfshopcsharp\res\nodata.png"
                                Grid.Column="0"
                                Grid.RowSpan="3"
                                Width="150"/>
