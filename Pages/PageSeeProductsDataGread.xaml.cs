@@ -33,5 +33,10 @@ namespace WpfShopCSharp.Pages
         {
             NavigationService.GoBack();
         }
+
+        private void btEdit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageEditForDataGread((sender as Button).DataContext as Product));
+        }
     }
 }
